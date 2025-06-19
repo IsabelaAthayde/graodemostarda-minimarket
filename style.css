@@ -109,8 +109,9 @@ main > section {
 .produto img {
     object-fit: cover;
     height: 242px;
-    width: 240px;
+    max-width: 240px;
     padding: 20px;
+    align-self: center;
 }
 
 .produto figcaption {
