@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --alaranjado: #F3B56B;
+    --marrom: #583F31;
+    --branco: #FDFEEB;
+    --bege: #F5EBD8;
+    --claro: #FFFCF4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 25px;
+}
+
+body {
+    background-color: var(--branco);
+    color: black;
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    margin: 0.75rem 9.5rem;
+    font-family: "Georama", sans-serif;
+}
+
+address{
+    font-style: normal;
+}
+
+.maiusculo{
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.subnome{
+    background-color: var(--bege);
+    font-weight: normal;
+    padding: 10px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+main > section {
+    margin-top: 150px;
+}
+
+.inv{
+    transform: scaleX(-1);
+}
+
+/*INICIO parte gabs*/
+#sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+}
+
+ #sobre img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    min-width: 420px;
+}
+
+#produtos {
+    text-align: center;
+}
+
+#produtos > h4, 
+#produtos > h2 {
+    margin: auto;
+}
+
+#produtos > h2 {
+    width: 60%;
+}
+
+#produtos > section {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.produto {
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--claro);
+    overflow: hidden;
+    width: 253px;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto img {
+    object-fit: cover;
+    height: 242px;
+    width: 240px;
+    padding: 20px;
+}
+
+.produto figcaption {
+    background-color: #FFF5E3;
+    font-weight: bold;
+    color: var(--marrom);
+    border-radius: 0 0 15px 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.produto figcaption > span {
+    color: var(--alaranjado);
+    font-size: calc(100% - 5px);
+    margin-top: auto;
+}
+
+#produtos button {
+    margin: auto;
+    padding: 3px 10px;
+    font-size: 2em;
+    color: var(--marrom);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: filter 0.2s;
+    background-color: var(--claro);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#produtos button:hover {
+    filter: brightness(97%);
+}
+/*FIM parte gabs*/
