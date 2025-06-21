@@ -149,9 +149,12 @@ main > section {
 }
 /*FIM parte gabs*/
 /*inicio parte thiago*/
+/*
+TODO: tirar redundancias, arrumar tamanho & tipo de fonte
+*/
 #contato {
-    background-color: #583F31;
-    color: #FFCC66;
+    background-color: var(--marrom);
+    color: var(--alaranjado);
     font-family: Arial, sans-serif;
     padding: 20px 0;
 }
@@ -166,7 +169,6 @@ main > section {
 
 #contato > p {
     text-align: center;
-    color: #C0A080;
     margin-top: 20px;
     padding: 10px 0;
     font-size: 0.9em;
@@ -188,12 +190,12 @@ main > section {
 
 #contato > p {
     flex-basis: 100%;
-    color: #C0A080;
+    color: #916C40;
     text-align: center;
     margin-top: 20px;
     padding: 10px 0;
     font-size: 0.9em;
-    border-top: 1px solid #C0A080; 
+    border-top: 1px solid #916C40; 
 }
 #contato address p,
 #contato section p {
@@ -206,7 +208,7 @@ main > section {
     height: 20px;
     vertical-align: middle;
     margin-right: 8px;
-    filter: brightness(0) saturate(100%) invert(78%) sepia(34%) saturate(745%) hue-rotate(3deg) brightness(105%) contrast(105%);
+    filter: brightness(0) saturate(100%) invert(78%) sepia(59%) saturate(1456%) hue-rotate(327deg) brightness(98%) contrast(100%);
 }
 
 #contato nav img {
@@ -232,4 +234,7 @@ main > section {
     height: 18px;
 }
 
+#contato a{
+    text-decoration: none;
+}
 /*FIM parte thiago*/
