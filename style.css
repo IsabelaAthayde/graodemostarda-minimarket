@@ -148,3 +148,88 @@ main > section {
     filter: brightness(97%);
 }
 /*FIM parte gabs*/
+/*inicio parte thiago*/
+#contato {
+    background-color: #583F31;
+    color: #FFCC66;
+    font-family: Arial, sans-serif;
+    padding: 20px 0;
+}
+
+
+#contato > address,
+#contato > section {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+}
+
+#contato > p {
+    text-align: center;
+    color: #C0A080;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+#contato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+
+#contato > section:nth-of-type(1) {
+    text-align: center;
+}
+
+
+#contato > p {
+    flex-basis: 100%;
+    color: #C0A080;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 0.9em;
+    border-top: 1px solid #C0A080; 
+}
+#contato address p,
+#contato section p {
+    font-size: 0.9em; 
+    line-height: 1.4;  
+    margin: 6px 0;     
+}
+#contato img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+    filter: brightness(0) saturate(100%) invert(78%) sepia(34%) saturate(745%) hue-rotate(3deg) brightness(105%) contrast(105%);
+}
+
+#contato nav img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+#contato > section:nth-of-type(1) > img:first-of-type {
+    width: 100px;  
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+
+#contato section p {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+#contato section p img {
+    width: 18px; 
+    height: 18px;
+}
+
+/*FIM parte thiago*/
