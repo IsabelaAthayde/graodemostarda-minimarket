@@ -18,33 +18,38 @@ poderiamos ter duas classes: uma paraos icones q repetem e outrea com as margens
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <section>
+<header>
+        <section class="primeira-barra">
             <aside>
                 <strong class="maiusculo">NOS SIGA</strong>
-                <a href="">
-                    <img src=""><!--TODO: logo whatsapp-->
+                <a href="https://www.instagram.com/graodemostarda_minimarket/">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968776.png" class="img1"><!--TODO: logo instagram-->
                 </a>
-                <a href="">
-                    <img src=""><!--TODO: logo instagram-->
+                
+                <a href="https://wa.me/5521985759764">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-whatsapp-3166424-2641595.png" class="img2"><!--TODO: logo whatsapp-->
                 </a>
+
+                <!--DUVIDA: talvez tornar as logos em SVG?-->
             </aside>
 
             <address>
                 <p>
-                    <img src=""><!--TODO: logo-->
-                    +55 (21) 97920-7145
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="#6b3c20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.74 19.74 0 0 1 3.08 4.18 
+                                 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12.81.37 1.6.73 2.34
+                                 a2 2 0 0 1-.45 2.11L9 9.91a16 16 0 0 0 5.09 5.09
+                                 l1.74-1.29a2 2 0 0 1 2.11-.45c.74.36 1.53.61 2.34.73
+                                 a2 2 0 0 1 1.72 2z"/>
+                    </svg>
+                    +55 (21) 98575-9764
                 </p>
-                <p>
-                    <img src="">
-                    email@gmail.com<!--TODO: email da loja & os icones-->
-                </p> 
             </address>
         </section>
         
-        <nav>
+        <nav class="menu">
             <a href="#index">
-                <img src=""> <!--TODO: logo-->
+                <img src="graudemostarda.png"> <!--TODO: logo-->
             </a>
             
             <ul>
@@ -56,8 +61,19 @@ poderiamos ter duas classes: uma paraos icones q repetem e outrea com as margens
             </ul>
         </nav>
     </header>
-    <!--TODO: aquela imagem enorme aq. eu normalmente coloco como aside por ser quase q uma "propaganda", mas ai vcs decidem oq vao fzer-->>
+    <section class="propaganda">
+        <div class="texto-propaganda">
+            <h3>Aqui você encontra</h3>
+            <h3>mais do que produtos,</h3>
+            <h2>encontra</h2>
+            <h1>cuidado</h1>
+            <img src="pngtree-mustard-plant-and-flowers-png-image_11990154 1.png" alt="planta">
+            <img src="d3bbdf94-af8f-4520-beba-4693d4d9820d_1-removebg-preview 1 (1).png" class="img-abaixo">
 
+        </div>
+    
+        <img src="coisas.png" alt="Imagem da propaganda">
+    </section>
     <main>
         <section id="sobre">
             <img src="imagens/sobre.png">
