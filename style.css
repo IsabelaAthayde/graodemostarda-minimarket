@@ -2,6 +2,7 @@
 :root{
     --alaranjado: #F3B56B;
     --marrom: #583F31;
+    --marromAvermelhado: #6B3C20;
     --branco: #FDFEEB;
     --bege: #F5EBD8;
     --claro: #FFFCF4;
@@ -241,8 +242,8 @@ TODO: tirar redundancias, arrumar tamanho & tipo de fonte
 
 /*Inicio da parte do Pedro*/
  .primeira-barra{
-    background-color:#F3B56B;
-    color: #6b3c20;
+    background-color:var(--alaranjado);
+    color: var(--marromAvermelhado);
     display: flex;
     align-items: center; 
     padding-left: 40px; 
@@ -256,7 +257,7 @@ TODO: tirar redundancias, arrumar tamanho & tipo de fonte
     transform: translateY(3px);
 
 } .menu{
-    background-color: #F5EBD8;
+    background-color: var(--bege);
     height: 100px;
     display: flex;
     align-items: center;
@@ -289,7 +290,7 @@ TODO: tirar redundancias, arrumar tamanho & tipo de fonte
     padding: 0;
 } .menu ul a{
     font-size: 16px;
-    background-color: #F5EBD8; 
+    background-color: var(--bege); 
     color: #241E16;            
     padding: 6px 12px;         
     border-radius: 8px 20px 8px 20px;      /* Tentei fzr o arredondamento, n sei se é assim q ces querem */
@@ -300,7 +301,7 @@ TODO: tirar redundancias, arrumar tamanho & tipo de fonte
 }
 .menu ul a:hover {
     background-color: #241E16; 
-    color: #F3B56B;
+    color: var(--alaranjado);
 } .propaganda {
     display: flex;
     justify-content: space-between; 
@@ -320,7 +321,7 @@ TODO: tirar redundancias, arrumar tamanho & tipo de fonte
     display: flex;
     flex-direction: column;
     align-items: center; 
-    color: #6b3c20;
+    color: var(--marromAvermelhado);
     padding-left: 80px; 
     text-align: center; 
     position:relative;
