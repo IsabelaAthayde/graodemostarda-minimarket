@@ -238,3 +238,130 @@ TODO: tirar redundancias, arrumar tamanho & tipo de fonte
     text-decoration: none;
 }
 /*FIM parte thiago*/
+
+/*Inicio da parte do Pedro*/
+ .primeira-barra{
+    background-color:#F3B56B;
+    color: #6b3c20;
+    display: flex;
+    align-items: center; 
+    padding-left: 40px; 
+    height: 50px;
+    font-size: 21px;
+}
+
+.primeira-barra img{
+    height: 28px;
+    width: auto;
+    transform: translateY(3px);
+
+} .menu{
+    background-color: #F5EBD8;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 40px;
+
+} .menu a{
+    text-decoration: none;
+    margin: 0 15px;
+    color: #241E16;
+    
+} address {
+    margin-left: auto;
+    padding-right: 40px; 
+
+} .img1{
+    margin-right: 10px;
+    margin-left: 10px;
+} .primeira-barra a{
+    text-decoration: none;
+} address svg {
+    transform: translateY(4px); /*o telefone dxei como svg*/
+} .menu li {
+    display: flex;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+} .menu ul a{
+    font-size: 16px;
+    background-color: #F5EBD8; 
+    color: #241E16;            
+    padding: 6px 12px;         
+    border-radius: 8px 20px 8px 20px;      /* Tentei fzr o arredondamento, n sei se é assim q ces querem */
+    text-decoration: none;     
+    transition: background-color 0.3s; 
+    border: 1px solid black;
+    font-size: 19px;              /* ⬅️ Diminui o tamanho do texto */ 
+}
+.menu ul a:hover {
+    background-color: #241E16; /*dxei isso aqui pq achei maneiro, mas podem tirar se acharem paia*/
+    color: #F3B56B;
+} .propaganda {
+    display: flex;
+    justify-content: space-between; /* texto na esquerda, imagem na direita */
+    align-items: center; /* alinha verticalmente */
+    padding: 40px;
+    margin-top: 15px;
+}
+
+.propaganda img {
+    width: 600px; 
+    height: auto;
+    margin-right: 80px;
+
+}
+
+.texto-propaganda {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza todos os filhos na horizontal */
+    color: #6b3c20;
+    padding-left: 80px; /* se quiser pode ajustar ou até remover */
+    text-align: center; /* para o texto ficar centralizado */
+    position:relative;
+}
+
+.texto-propaganda h2 {
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+.texto-propaganda h1 {
+    font-size: 54px;
+    margin-bottom: 16px;
+}.texto-propaganda h3 {
+    font-size: 45px;
+    margin-bottom: 16px;
+}
+ nav img{
+    height:76px;
+    width:auto;
+} .texto-propaganda h1,
+.texto-propaganda h2,
+.texto-propaganda h3 {
+    margin: 2px 0; 
+}.texto-propaganda img {
+    width: 100px;
+    height: auto;
+    margin-top: -80px;
+    margin-left: -185px; 
+} .img-abaixo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    margin-left: 0; 
+    margin-right: 0; 
+}
+
+.img-abaixo {
+    position: absolute; /* 🔥 Sai do fluxo normal e permite posicionamento livre */
+    width: 190px !important;
+    height: auto !important;
+    top: 320px;   /* 🔼 Distância do topo do container */
+    left: 402px; /* 🔽 Distância da esquerda do container */
+}
