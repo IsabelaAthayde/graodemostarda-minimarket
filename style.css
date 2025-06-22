@@ -296,15 +296,15 @@ TODO: tirar redundancias, arrumar tamanho & tipo de fonte
     text-decoration: none;     
     transition: background-color 0.3s; 
     border: 1px solid black;
-    font-size: 19px;              /* ⬅️ Diminui o tamanho do texto */ 
+    font-size: 19px;             
 }
 .menu ul a:hover {
-    background-color: #241E16; /*dxei isso aqui pq achei maneiro, mas podem tirar se acharem paia*/
+    background-color: #241E16; 
     color: #F3B56B;
 } .propaganda {
     display: flex;
-    justify-content: space-between; /* texto na esquerda, imagem na direita */
-    align-items: center; /* alinha verticalmente */
+    justify-content: space-between; 
+    align-items: center; 
     padding: 40px;
     margin-top: 15px;
 }
@@ -319,10 +319,10 @@ TODO: tirar redundancias, arrumar tamanho & tipo de fonte
 .texto-propaganda {
     display: flex;
     flex-direction: column;
-    align-items: center; /* centraliza todos os filhos na horizontal */
+    align-items: center; 
     color: #6b3c20;
-    padding-left: 80px; /* se quiser pode ajustar ou até remover */
-    text-align: center; /* para o texto ficar centralizado */
+    padding-left: 80px; 
+    text-align: center; 
     position:relative;
 }
 
@@ -359,9 +359,11 @@ TODO: tirar redundancias, arrumar tamanho & tipo de fonte
 }
 
 .img-abaixo {
-    position: absolute; /* 🔥 Sai do fluxo normal e permite posicionamento livre */
+    position: absolute; 
     width: 190px !important;
     height: auto !important;
-    top: 320px;   /* 🔼 Distância do topo do container */
-    left: 402px; /* 🔽 Distância da esquerda do container */
+    top: 320px;   
+    left: 402px; 
 }
+
+/*Fim parte do Pedro*/
