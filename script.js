@@ -20,10 +20,10 @@ let produtos = [
 ];
 
 let avaliacoes = [
-    { nome: "Fernanda Torres", imagem: "", estrelas: 5 },
-    { nome: "Mauricio Garcia", imagem: "", estrelas: 3 },
-    { nome: "Patricia Prione", imagem: "", estrelas: 4 },
-    { nome: "Roberto Silva", imagem: "", estrelas: 5 }
+    { nome: "Fernanda Torres", imagem: "perfil.png", estrelas: 5 },
+    { nome: "Mauricio Garcia", imagem: "perfil.png", estrelas: 3 },
+    { nome: "Patricia Prione", imagem: "perfil.png", estrelas: 4 },
+    { nome: "Roberto Silva", imagem: "perfil.png", estrelas: 5 }
 ];
 
 //--------------------------------------------------
