@@ -20,10 +20,10 @@ let produtos = [
 ];
 
 let avaliacoes = [
-    { nome: "Fernanda Torres", imagem: "perfil.png", estrelas: 5 },
-    { nome: "Mauricio Garcia", imagem: "perfil.png", estrelas: 3 },
-    { nome: "Patricia Prione", imagem: "perfil.png", estrelas: 4 },
-    { nome: "Roberto Silva", imagem: "perfil.png", estrelas: 5 }
+    { nome: "Fernanda Torres", imagem: "perfil.png", estrelas: 5, desc: "Esse mini-mercado do Encantado é uma ótima opção! Sempre encontro produtos fresquinhos e com preços justos. O atendimento é muito bom, e os funcionários são bem atenciosos. Recomendo para quem mora por aqui!"},
+    { nome: "Miranda Garcia", imagem: "perfil.png", estrelas: 5, desc: "Eu adoro fazer compras aqui! Há uma grande variedade de produtos, a qualidade é sempre alta e, o melhor, as filas são rápidas. Com certeza voltarei mais vezes!"},
+    { nome: "Roberto da Costa", imagem: "perfil.png", estrelas: 5, desc: "Fui muito bem atendido no mercadinho. O ambiente é agradável e tudo está sempre organizado. Os funcionários são simpáticos e prontos para ajudar."},
+    { nome: "Patricia Amaral", imagem: "perfil.png", estrelas: 4, desc: "Atende bem às necessidades do bairro, o ambiente é sempre agradável. Além disso, é o lugar mais próximo da minha casa, o que facilita bastante no dia a dia. Também considero um local seguro, o que é muito importante. "}
 ];
 
 //--------------------------------------------------
@@ -96,8 +96,10 @@ produtosContainer.addEventListener('click', (event) => {
 });
 
 //-----------------------------------------------------
+const clienteDesc = document.getElementsByClassName('texto-avaliacao')[0];
 
 //Renderiza incialmente o primeiro cliente
+ clienteDesc.innerHTML = avaliacoes[av_display].desc;
 avaliacaoContainer.innerHTML = `
     <section>
         <img src="./imagens/produtos/${avaliacoes[av_display].imagem}">
@@ -108,17 +110,13 @@ avaliacaoContainer.innerHTML = `
 `;
 
 //precisam estar aqui para não serem excluidas pela DOM
-const clienteImg = document.querySelector('#cliente-avaliacao section img');
 const clienteNome = document.querySelector('#cliente-avaliacao section p:last-of-type');
 const clienteNota = document.querySelector('#cliente-avaliacao > p:last-of-type');
 
 // Muda os informações das tags para o cliente prox/anterior
 function renderizarAvaliacoes() {
     let nota = Number(avaliacoes[av_display].estrelas)
-    if (clienteImg) {
-        clienteImg.src = `./imagens/produtos/${avaliacoes[av_display].imagem}`;
-    }
-
+    clienteDesc.innerHTML = avaliacoes[av_display].desc;
     clienteNome.innerHTML = avaliacoes[av_display].nome;
 
     clienteNota.innerHTML = '★'.repeat(nota);

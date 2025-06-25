@@ -6,6 +6,7 @@
     --branco: #FDFEEB;
     --bege: #F5EBD8;
     --claro: #FFFCF4;
+    --marrom-claro: #CDA98E;
 }
 
 *{
@@ -26,7 +27,7 @@ body {
 }
 
 main {
-    margin: 0.75rem 9.5rem;
+    margin: 0.75rem 9.5rem 0;
     font-family: "Georama", sans-serif;
 }
 
@@ -383,10 +384,17 @@ TODO: tirar redundancias, arrumar tamanho & tipo de fonte
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px;
-  border: 1px solid #eee0bc;
+  padding: 40px 75px;
+  border: 1px solid var(--bege);
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+}
+
+#cliente-avaliacao {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #cliente-avaliacao section {
@@ -408,19 +416,18 @@ TODO: tirar redundancias, arrumar tamanho & tipo de fonte
 
 #cliente-avaliacao p:last-child {
   font-size: 20px;
-  color: #F3B56B;
+  color: #f59b2e;
 }
 
 .avaliacao::after {
   content: "★★★★★";
-  color: #F3B56B;
   font-size: 18px;
   margin-left: 8px;
   justify-content: center;
 }
 
 /* Botões de navegação */
-#avaliacoes section:last-of-type {
+#avaliacoes article section:last-child {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -438,8 +445,17 @@ TODO: tirar redundancias, arrumar tamanho & tipo de fonte
   opacity: 0.3;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--marrom-claro);
+    width: 70%;
+    margin: 20px auto;
+}
+
 .texto-avaliacao {
-  font-size: 14px;
+  font-size: 18px;
+  text-align: justify;
   color: #333;
   line-height: 1.6;
   margin-top: 15px;
@@ -447,11 +463,14 @@ TODO: tirar redundancias, arrumar tamanho & tipo de fonte
 }
 
 .secao-laranja {
-  background-color: #f4a950;
+  background-color: var(--alaranjado);
   padding: 60px 20px;
-  width: 100%;
   display: flex;
   justify-content: center;
+
+  width: 100vw;
+  position: relative;
+  left: -9.5rem;
 }
 
 .secao-laranja > #avaliacoes {
