@@ -1,4 +1,4 @@
-# 🛒 Grão de Mostarda — Site Institucional
+# Grão de Mostarda — Site Institucional
 
 Site institucional para o Grão de Mostarda, um mini-mercado localizado no bairro do Encantado (RJ). O site apresenta a loja, seus produtos mais procurados e avaliações de clientes, com foco em usabilidade e identidade visual da marca. Projeto extensionista desenvolvido em equipe.
 
